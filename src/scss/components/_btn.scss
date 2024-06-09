@@ -1,24 +1,44 @@
 .btn {
+	text-decoration: none;
+	width: fit-content;
 	&-primary {
+		position: relative;
 		font-weight: 400;
 		font-size: 18px;
 		line-height: 100%;
 		color: var(--white-color);
-		padding: 15px 35px 15px 42px;
+		padding: 16px 31px;
 		border-radius: 25px;
-		border: 2px solid transparent;
-		border-right: 0;
-		border-left: 0;
-		border-image: linear-gradient(90deg, rgba(255, 0, 0, 0) 0%, var(--red-color) 50%, rgba(255, 0, 0, 0) 100%);
-		background: linear-gradient(124deg, var(--light-red-color), var(--dark-red-color));
-		box-shadow: 0 4px 20px 0 rgba(156, 23, 23, 0.2);
-		border-image-slice: 1;
 		display: flex;
 		align-items: center;
+
+		// рисуем границы + фон кнопки сами, но часть градиаента границ выходит за бордер радиус
+		// border: 2px solid transparent;
+		// border-right: 0;
+		// border-left: 0;
+		// border-image: linear-gradient(
+		// 	90deg,
+		// 	transparent 0%,
+		// 	var(--red-color) 50%,
+		// 	transparent 100%
+		// );
+		// background: linear-gradient(124deg, var(--light-red-color), var(--dark-red-color));
+		// box-shadow: 0 4px 20px 0 rgba(156, 23, 23, 0.2);
+		// border-image-slice: 1;
+
+		// риусем фон целым бэкграундом из фигмы
+		background-image: url(../img/btn-bg.svg);
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: cover;
+
 		&__arrow {
 			margin-left: 14px;
 			transition: transform 0.1s ease;
 			margin-bottom: -1px;
+		}
+		&-shadowless {
+			box-shadow: none;
 		}
 		&:hover {
 			& .btn-primary__arrow {
