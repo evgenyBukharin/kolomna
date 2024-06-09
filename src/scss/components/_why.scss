@@ -1,6 +1,8 @@
 .why {
-	padding: 80px 0;
-	background: var(--white-color);
+	position: relative;
+	padding: 160px 0 80px;
+	background: transparent;
+	z-index: 20;
 	&__container {
 		max-width: 1450px;
 	}
@@ -21,6 +23,8 @@
 		gap: 30px;
 	}
 	&__item {
+		position: relative;
+		z-index: 40;
 		grid-column: 4 span;
 		box-shadow: 0 50px 60px 0 rgba(0, 0, 0, 0.05);
 		background: linear-gradient(
