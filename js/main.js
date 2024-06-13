@@ -10670,28 +10670,10 @@ if (sliderEl) {
       bulletClass: "swiper-pagination-bullet hero__bullet",
       clickable: true
     },
-    on: {
-      // afterInit: function () {
-      // 	setSlidesHeight(this.slides);
-      // },
-    },
     effect: "fade",
     fadeEffect: {
       crossFade: true
     }
-  });
-}
-function setSlidesHeight(slides) {
-  let maxSlideHeight = 0;
-  slides.forEach(slide => {
-    let slideHeight = slide.scrollHeight;
-    console.log(slideHeight);
-    if (slideHeight > maxSlideHeight) {
-      maxSlideHeight = slideHeight;
-    }
-  });
-  slides.forEach(slide => {
-    slide.style.height = maxSlideHeight + "px";
   });
 }
 ;// CONCATENATED MODULE: ./src/js/components/types-slider.js

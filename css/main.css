@@ -578,6 +578,7 @@ section {
   padding: 0 88px
 }
 .hero__slide {
+  height: auto;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
