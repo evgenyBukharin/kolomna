@@ -10670,11 +10670,11 @@ if (sliderEl) {
       bulletClass: "swiper-pagination-bullet hero__bullet",
       clickable: true
     },
-    // on: {
-    // 	afterInit: function () {
-    // 		setSlidesHeight(this.slides);
-    // 	},
-    // },
+    on: {
+      afterInit: function () {
+        setSlidesHeight(this.slides);
+      }
+    },
     effect: "fade",
     fadeEffect: {
       crossFade: true
