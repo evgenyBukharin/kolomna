@@ -1,813 +1,749 @@
 <!DOCTYPE html>
 <html lang="ru" class="page">
 	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
-		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
-		<meta name="theme-color" content="#111111" />
-		<title>Kolomna</title>
-		<link rel="stylesheet" href="css/vendor.css" />
-		<link rel="stylesheet" href="css/main.css" />
-		<script defer src="js/main.js"></script>
-	</head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+	<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+	<meta name="theme-color" content="#111111" />
+	<title>Kolomna</title>
+	<link rel="stylesheet" href="css/vendor.css" />
+	<link rel="stylesheet" href="css/main.css" />
+	<script defer src="js/main.js"></script>
+</head>
 
 	<body class="page__body">
 		<div class="site-container">
 			<header class="header">
-				<div class="container header__container">
-					<div class="header__body">
-						<button class="burger header__burger">
-							<span class="burger__line"></span>
-						</button>
+	<div class="container header__container">
+		<div class="header__body">
+			<button class="burger header__burger">
+				<span class="burger__line"></span>
+			</button>
+			<img src="./img/logo.webp" class="image header__logo" width="134" height="134" alt="Логотип компании" />
+			<div class="header__top">
+				<nav class="nav header__nav" title="Навигационная панель">
+					<ul class="nav__list list-reset">
+						<li class="nav__item"><a href="#" class="nav__link">Об организации</a></li>
+						<li class="nav__item"><a href="#" class="nav__link">Часто задаваемые вопросы</a></li>
+						<li class="nav__item"><a href="#" class="nav__link">Отзывы</a></li>
+						<li class="nav__item"><a href="#" class="nav__link">Контакты</a></li>
+					</ul>
+				</nav>
+				<div class="header__container-right">
+					<div class="header__social">
+						<a href="#" target="_blank" class="header__link-social">
+							<svg class="header__icon header__icon-vk">
+								<use xlink:href="./img/sprite.svg#vk"></use>
+							</svg>
+						</a>
+						<a href="#" target="_blank" class="header__link-social">
+							<svg class="header__icon header__icon-tg">
+								<use xlink:href="./img/sprite.svg#tg"></use>
+							</svg>
+						</a>
+						<a href="#" target="_blank" class="header__link-social">
+							<svg class="header__icon header__icon-whatsapp">
+								<use xlink:href="./img/sprite.svg#whatsapp"></use>
+							</svg>
+						</a>
+					</div>
+					<button class="btn-reset header__call">
 						<img
-							src="./img/logo.webp"
-							class="image header__logo"
-							width="134"
-							height="134"
-							alt="Логотип компании"
+							src="./img/phone.svg"
+							class="image header__icon-phone"
+							width="20"
+							height="20"
+							alt="Иконка телефона"
 						/>
-						<div class="header__top">
-							<nav class="nav header__nav" title="Навигационная панель">
-								<ul class="nav__list list-reset">
-									<li class="nav__item"><a href="#" class="nav__link">Об организации</a></li>
-									<li class="nav__item">
-										<a href="#" class="nav__link">Часто задаваемые вопросы</a>
-									</li>
-									<li class="nav__item"><a href="#" class="nav__link">Отзывы</a></li>
-									<li class="nav__item"><a href="#" class="nav__link">Контакты</a></li>
-								</ul>
-							</nav>
-							<div class="header__container-right">
-								<div class="header__social">
-									<a href="#" target="_blank" class="header__link-social">
-										<svg class="header__icon header__icon-vk">
-											<use xlink:href="./img/sprite.svg#vk"></use>
-										</svg>
-									</a>
-									<a href="#" target="_blank" class="header__link-social">
-										<svg class="header__icon header__icon-tg">
-											<use xlink:href="./img/sprite.svg#tg"></use>
-										</svg>
-									</a>
-									<a href="#" target="_blank" class="header__link-social">
-										<svg class="header__icon header__icon-whatsapp">
-											<use xlink:href="./img/sprite.svg#whatsapp"></use>
-										</svg>
+						<div class="header__container-call">
+							<div class="header__text-call header__text-call-primary">8 (999) 000-55-10</div>
+							<div class="header__text-call header__text-call-secondary">заказать звонок</div>
+						</div>
+					</button>
+				</div>
+			</div>
+			<div class="header__bottom">
+				<ul class="list-reset header__list">
+					<li class="header__item">
+						<a href="#" class="header__link">Подготовка водителей</a>
+					</li>
+					<li class="header__item">
+						<a href="#" class="header__link header__link-active">Услуги и цены</a>
+					</li>
+					<li class="header__item">
+						<a href="#" class="header__link">Записаться</a>
+					</li>
+					<li class="header__item">
+						<a href="#" class="header__link header__link-online">Online обучение</a>
+					</li>
+				</ul>
+				<div class="header__discount">
+					<img
+						src="./img/discount.svg"
+						class="image header__icon-discount"
+						width="19"
+						height="21"
+						alt="Иконка скидки"
+					/>
+					Акции и скидки
+				</div>
+			</div>
+		</div>
+	</div>
+</header>
+
+			<main class="main">
+				<section class="hero">
+	<div class="swiper hero__slider">
+		<div class="hero__button-control hero__button-control-prev">
+			<svg class="hero__arrow">
+				<use xlink:href="./img/sprite.svg#right-arrow"></use>
+			</svg>
+		</div>
+		<div class="swiper-wrapper hero__wrapper">
+			<div class="swiper-slide hero__slide" style="background-image: url(./img/hero-slide-1-bg.webp)">
+				<div class="container hero__container">
+					<div class="hero__body">
+						<div class="hero__container-shadow">
+							<div class="hero__container-content">
+								<div class="hero__content">
+									<h1>Открыт набор на&nbsp;обучение</h1>
+									<p>
+										Водитель внедорожных мототранспортных средств категории «А1» (квадроцикл,
+										снегоход) - 13 000 руб
+									</p>
+									<p>
+										Водитель внедорожных автотранспортных средств категории «А2» (багги, вездеходы
+										"Трэкол", "Узола", "Ухтыш") - 15 000 руб
+									</p>
+									<a href="#" class="btn-reset btn btn-primary hero__button">
+										подробнее
+										<img
+											src="./img/right-yellow-arrow.svg"
+											class="image btn-primary__arrow"
+											width="9"
+											height="14"
+											alt="Стрелка вправо"
+										/>
 									</a>
 								</div>
-								<button class="btn-reset header__call">
-									<img
-										src="./img/phone.svg"
-										class="image header__icon-phone"
-										width="20"
-										height="20"
-										alt="Иконка телефона"
-									/>
-									<div class="header__container-call">
-										<div class="header__text-call header__text-call-primary">8 (999) 000-55-10</div>
-										<div class="header__text-call header__text-call-secondary">заказать звонок</div>
-									</div>
-								</button>
-							</div>
-						</div>
-						<div class="header__bottom">
-							<ul class="list-reset header__list">
-								<li class="header__item">
-									<a href="#" class="header__link">Подготовка водителей</a>
-								</li>
-								<li class="header__item">
-									<a href="#" class="header__link header__link-active">Услуги и цены</a>
-								</li>
-								<li class="header__item">
-									<a href="#" class="header__link">Записаться</a>
-								</li>
-								<li class="header__item">
-									<a href="#" class="header__link header__link-online">Online обучение</a>
-								</li>
-							</ul>
-							<div class="header__discount">
-								<img
-									src="./img/discount.svg"
-									class="image header__icon-discount"
-									width="19"
-									height="21"
-									alt="Иконка скидки"
-								/>
-								Акции и скидки
 							</div>
 						</div>
 					</div>
 				</div>
-			</header>
 
-			<main class="main">
-				<section class="hero">
-					<div class="swiper hero__slider">
-						<div class="hero__button-control hero__button-control-prev">
-							<svg class="hero__arrow">
-								<use xlink:href="./img/sprite.svg#right-arrow"></use>
-							</svg>
-						</div>
-						<div class="swiper-wrapper hero__wrapper">
-							<div
-								class="swiper-slide hero__slide"
-								style="background-image: url(./img/hero-slide-1-bg.webp)"
-							>
-								<div class="container hero__container">
-									<div class="hero__body">
-										<div class="hero__container-shadow">
-											<div class="hero__container-content">
-												<div class="hero__content">
-													<h1>Открыт набор на&nbsp;обучение</h1>
-													<p>
-														Водитель внедорожных мототранспортных средств категории «А1»
-														(квадроцикл, снегоход) - 13 000 руб
-													</p>
-													<p>
-														Водитель внедорожных автотранспортных средств категории
-														«А2» (багги, вездеходы "Трэкол", "Узола", "Ухтыш") - 15 000 руб
-													</p>
-													<a href="#" class="btn-reset btn btn-primary hero__button">
-														подробнее
-														<img
-															src="./img/right-yellow-arrow.svg"
-															class="image btn-primary__arrow"
-															width="9"
-															height="14"
-															alt="Стрелка вправо"
-														/>
-													</a>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-
-								<!-- 🙂🙂🙂 nice design -->
-								<a href="#" class="btn-reset btn btn-primary hero__button-hidden">
-									подробнее
-									<img
-										src="./img/right-yellow-arrow.svg"
-										class="image btn-primary__arrow"
-										width="9"
-										height="14"
-										alt="Стрелка вправо"
-									/>
-								</a>
-							</div>
-							<div
-								class="swiper-slide hero__slide"
-								style="background-image: url(./img/hero-slide-2-bg.webp)"
-							>
-								<div class="container hero__container">
-									<div class="hero__body">
-										<div class="hero__container-shadow">
-											<div class="hero__container-content">
-												<div class="hero__content">
-													<h1>Скидка 2000 руб. на&nbsp;категорию «В»</h1>
-													<p>
-														Членам профсоюзной организации работников ОАО "Челябинский
-														Металлургический Комбинат" (ЧМК) при предъявлении справки о
-														принадлежности работника к профсоюзному комитету ЧМК
-													</p>
-													<a href="#" class="btn-reset btn btn-primary hero__button">
-														подробнее
-														<img
-															src="./img/right-yellow-arrow.svg"
-															class="image btn-primary__arrow"
-															width="9"
-															height="14"
-															alt="Стрелка вправо"
-														/>
-													</a>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-								<a href="#" class="btn-reset btn btn-primary hero__button-hidden">
-									подробнее
-									<img
-										src="./img/right-yellow-arrow.svg"
-										class="image btn-primary__arrow"
-										width="9"
-										height="14"
-										alt="Стрелка вправо"
-									/>
-								</a>
-							</div>
-							<div
-								class="swiper-slide hero__slide"
-								style="background-image: url(./img/hero-slide-1-bg.webp)"
-							>
-								<div class="container hero__container">
-									<div class="hero__body">
-										<div class="hero__container-shadow">
-											<div class="hero__container-content">
-												<div class="hero__content">
-													<h1>Открыт набор на&nbsp;обучение</h1>
-													<p>
-														Водитель внедорожных мототранспортных средств категории «А1»
-														(квадроцикл, снегоход) - 13 000 руб
-													</p>
-													<p>
-														Водитель внедорожных автотранспортных средств категории
-														«А2» (багги, вездеходы "Трэкол", "Узола", "Ухтыш") - 15 000 руб
-													</p>
-													<a href="#" class="btn-reset btn btn-primary hero__button">
-														подробнее
-														<img
-															src="./img/right-yellow-arrow.svg"
-															class="image btn-primary__arrow"
-															width="9"
-															height="14"
-															alt="Стрелка вправо"
-														/>
-													</a>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-								<a href="#" class="btn-reset btn btn-primary hero__button-hidden">
-									подробнее
-									<img
-										src="./img/right-yellow-arrow.svg"
-										class="image btn-primary__arrow"
-										width="9"
-										height="14"
-										alt="Стрелка вправо"
-									/>
-								</a>
-							</div>
-							<div
-								class="swiper-slide hero__slide"
-								style="background-image: url(./img/hero-slide-2-bg.webp)"
-							>
-								<div class="container hero__container">
-									<div class="hero__body">
-										<div class="hero__container-shadow">
-											<div class="hero__container-content">
-												<div class="hero__content">
-													<h1>Скидка 2000 руб. на&nbsp;категорию «В»</h1>
-													<p>
-														Членам профсоюзной организации работников ОАО "Челябинский
-														Металлургический Комбинат" (ЧМК) при предъявлении справки о
-														принадлежности работника к профсоюзному комитету ЧМК
-													</p>
-													<a href="#" class="btn-reset btn btn-primary hero__button">
-														подробнее
-														<img
-															src="./img/right-yellow-arrow.svg"
-															class="image btn-primary__arrow"
-															width="9"
-															height="14"
-															alt="Стрелка вправо"
-														/>
-													</a>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-								<a href="#" class="btn-reset btn btn-primary hero__button-hidden">
-									подробнее
-									<img
-										src="./img/right-yellow-arrow.svg"
-										class="image btn-primary__arrow"
-										width="9"
-										height="14"
-										alt="Стрелка вправо"
-									/>
-								</a>
-							</div>
-							<div
-								class="swiper-slide hero__slide"
-								style="background-image: url(./img/hero-slide-2-bg.webp)"
-							>
-								<div class="container hero__container">
-									<div class="hero__body">
-										<div class="hero__container-shadow">
-											<div class="hero__container-content">
-												<div class="hero__content">
-													<h1>Скидка 2000 руб. на&nbsp;категорию «В»</h1>
-													<p>
-														Членам профсоюзной организации работников ОАО "Челябинский
-														Металлургический Комбинат" (ЧМК) при предъявлении справки о
-														принадлежности работника к профсоюзному комитету ЧМК
-													</p>
-													<a href="#" class="btn-reset btn btn-primary hero__button">
-														подробнее
-														<img
-															src="./img/right-yellow-arrow.svg"
-															class="image btn-primary__arrow"
-															width="9"
-															height="14"
-															alt="Стрелка вправо"
-														/>
-													</a>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-								<a href="#" class="btn-reset btn btn-primary hero__button-hidden">
-									подробнее
-									<img
-										src="./img/right-yellow-arrow.svg"
-										class="image btn-primary__arrow"
-										width="9"
-										height="14"
-										alt="Стрелка вправо"
-									/>
-								</a>
-							</div>
-						</div>
-						<div class="hero__button-control hero__button-control-next">
-							<svg class="hero__arrow">
-								<use xlink:href="./img/sprite.svg#right-arrow"></use>
-							</svg>
-						</div>
-						<div class="swiper-pagination hero__pagination"></div>
-					</div>
-				</section>
-				<section class="types">
-					<div class="container types__container">
-						<h2 class="title types__title">
-							Обучение водителей <span class="types__title-grey">Категории</span>
-						</h2>
-						<div class="swiper types__slider">
-							<div class="swiper-wrapper types__wrapper">
-								<div class="swiper-slide types__slide">
-									<div class="types__column">
-										<p class="types__paragraph">
-											Категория «BE» - автомобили категории «В», сцепленные с прицепом,
-											разрешенная максимальная масса которого превышает 750 килограммов и
-											превышает массу автомобиля без нагрузки; автомобили категории «В»,
-											сцепленные с прицепом, разрешенная максимальная масса которого превышает 750
-											килограммов, при условии, что общая разрешенная максимальная масса такого
-											состава транспортных средств превышает 3500 килограммов
-										</p>
-										<div class="types__billing">
-											<h4 class="title types__period">3 месяца</h4>
-											<h3 class="title types__price">40 000 руб.</h3>
-										</div>
-										<a
-											href="#"
-											class="btn-reset btn btn-primary btn-primary-shadowless types__button"
-										>
-											записаться
-											<img
-												src="./img/right-yellow-arrow.svg"
-												class="image btn-primary__arrow"
-												width="9"
-												height="14"
-												alt="Стрелка вправо"
-											/>
-										</a>
-									</div>
-									<div class="types__container-image">
+				<!-- 🙂🙂🙂 nice design -->
+				<a href="#" class="btn-reset btn btn-primary hero__button-hidden">
+					подробнее
+					<img
+						src="./img/right-yellow-arrow.svg"
+						class="image btn-primary__arrow"
+						width="9"
+						height="14"
+						alt="Стрелка вправо"
+					/>
+				</a>
+			</div>
+			<div class="swiper-slide hero__slide" style="background-image: url(./img/hero-slide-2-bg.webp)">
+				<div class="container hero__container">
+					<div class="hero__body">
+						<div class="hero__container-shadow">
+							<div class="hero__container-content">
+								<div class="hero__content">
+									<h1>Скидка 2000 руб. на&nbsp;категорию «В»</h1>
+									<p>
+										Членам профсоюзной организации работников ОАО "Челябинский Металлургический
+										Комбинат" (ЧМК) при предъявлении справки о принадлежности работника к
+										профсоюзному комитету ЧМК
+									</p>
+									<a href="#" class="btn-reset btn btn-primary hero__button">
+										подробнее
 										<img
-											src="./img/types-image-1.webp"
-											class="image types__image types__image-1"
-											width="810"
-											height="518"
-											alt="Изображение категории"
+											src="./img/right-yellow-arrow.svg"
+											class="image btn-primary__arrow"
+											width="9"
+											height="14"
+											alt="Стрелка вправо"
 										/>
-									</div>
+									</a>
 								</div>
-								<div class="swiper-slide types__slide">
-									<div class="types__column">
-										<p class="types__paragraph">
-											Категория «BE» - автомобили категории «В», сцепленные с прицепом,
-											разрешенная максимальная масса которого превышает 750 килограммов и
-											превышает массу автомобиля без нагрузки; автомобили категории «В»,
-											сцепленные с прицепом, разрешенная максимальная масса которого превышает 750
-											килограммов, при условии, что общая разрешенная максимальная масса такого
-											состава транспортных средств превышает 3500 килограммов
-										</p>
-										<div class="types__billing">
-											<h4 class="title types__period">3 месяца</h4>
-											<h3 class="title types__price">40 000 руб.</h3>
-										</div>
-										<a
-											href="#"
-											class="btn-reset btn btn-primary btn-primary-shadowless types__button"
-										>
-											записаться
-											<img
-												src="./img/right-yellow-arrow.svg"
-												class="image btn-primary__arrow"
-												width="9"
-												height="14"
-												alt="Стрелка вправо"
-											/>
-										</a>
-									</div>
-									<div class="types__container-image">
-										<img
-											src="./img/types-image-2.webp"
-											class="image types__image types__image-2"
-											width="810"
-											height="518"
-											alt="Изображение категории"
-										/>
-									</div>
-								</div>
-								<div class="swiper-slide types__slide">
-									<div class="types__column">
-										<p class="types__paragraph">
-											Категория «BE» - автомобили категории «В», сцепленные с прицепом,
-											разрешенная максимальная масса которого превышает 750 килограммов и
-											превышает массу автомобиля без нагрузки; автомобили категории «В»,
-											сцепленные с прицепом, разрешенная максимальная масса которого превышает 750
-											килограммов, при условии, что общая разрешенная максимальная масса такого
-											состава транспортных средств превышает 3500 килограммов
-										</p>
-										<div class="types__billing">
-											<h4 class="title types__period">3 месяца</h4>
-											<h3 class="title types__price">40 000 руб.</h3>
-										</div>
-										<a
-											href="#"
-											class="btn-reset btn btn-primary btn-primary-shadowless types__button"
-										>
-											записаться
-											<img
-												src="./img/right-yellow-arrow.svg"
-												class="image btn-primary__arrow"
-												width="9"
-												height="14"
-												alt="Стрелка вправо"
-											/>
-										</a>
-									</div>
-									<div class="types__container-image">
-										<img
-											src="./img/types-image-3.webp"
-											class="image types__image types__image-3"
-											width="810"
-											height="518"
-											alt="Изображение категории"
-										/>
-									</div>
-								</div>
-								<div class="swiper-slide types__slide">
-									<div class="types__column">
-										<p class="types__paragraph">
-											Категория «BE» - автомобили категории «В», сцепленные с прицепом,
-											разрешенная максимальная масса которого превышает 750 килограммов и
-											превышает массу автомобиля без нагрузки; автомобили категории «В»,
-											сцепленные с прицепом, разрешенная максимальная масса которого превышает 750
-											килограммов, при условии, что общая разрешенная максимальная масса такого
-											состава транспортных средств превышает 3500 килограммов
-										</p>
-										<div class="types__billing">
-											<h4 class="title types__period">3 месяца</h4>
-											<h3 class="title types__price">40 000 руб.</h3>
-										</div>
-										<a
-											href="#"
-											class="btn-reset btn btn-primary btn-primary-shadowless types__button"
-										>
-											записаться
-											<img
-												src="./img/right-yellow-arrow.svg"
-												class="image btn-primary__arrow"
-												width="9"
-												height="14"
-												alt="Стрелка вправо"
-											/>
-										</a>
-									</div>
-									<div class="types__container-image">
-										<img
-											src="./img/types-image-4.webp"
-											class="image types__image types__image-4"
-											width="810"
-											height="518"
-											alt="Изображение категории"
-										/>
-									</div>
-								</div>
-								<div class="swiper-slide types__slide">
-									<div class="types__column">
-										<p class="types__paragraph">
-											Категория «BE» - автомобили категории «В», сцепленные с прицепом,
-											разрешенная максимальная масса которого превышает 750 килограммов и
-											превышает массу автомобиля без нагрузки; автомобили категории «В»,
-											сцепленные с прицепом, разрешенная максимальная масса которого превышает 750
-											килограммов, при условии, что общая разрешенная максимальная масса такого
-											состава транспортных средств превышает 3500 килограммов
-										</p>
-										<div class="types__billing">
-											<h4 class="title types__period">3 месяца</h4>
-											<h3 class="title types__price">40 000 руб.</h3>
-										</div>
-										<a
-											href="#"
-											class="btn-reset btn btn-primary btn-primary-shadowless types__button"
-										>
-											записаться
-											<img
-												src="./img/right-yellow-arrow.svg"
-												class="image btn-primary__arrow"
-												width="9"
-												height="14"
-												alt="Стрелка вправо"
-											/>
-										</a>
-									</div>
-									<div class="types__container-image">
-										<img
-											src="./img/types-image-5.webp"
-											class="image types__image types__image-5"
-											width="810"
-											height="518"
-											alt="Изображение категории"
-										/>
-									</div>
-								</div>
-								<div class="swiper-slide types__slide">
-									<div class="types__column">
-										<p class="types__paragraph">
-											Категория «BE» - автомобили категории «В», сцепленные с прицепом,
-											разрешенная максимальная масса которого превышает 750 килограммов и
-											превышает массу автомобиля без нагрузки; автомобили категории «В»,
-											сцепленные с прицепом, разрешенная максимальная масса которого превышает 750
-											килограммов, при условии, что общая разрешенная максимальная масса такого
-											состава транспортных средств превышает 3500 килограммов
-										</p>
-										<div class="types__billing">
-											<h4 class="title types__period">3 месяца</h4>
-											<h3 class="title types__price">40 000 руб.</h3>
-										</div>
-										<a
-											href="#"
-											class="btn-reset btn btn-primary btn-primary-shadowless types__button"
-										>
-											записаться
-											<img
-												src="./img/right-yellow-arrow.svg"
-												class="image btn-primary__arrow"
-												width="9"
-												height="14"
-												alt="Стрелка вправо"
-											/>
-										</a>
-									</div>
-									<div class="types__container-image">
-										<img
-											src="./img/types-image-6.webp"
-											class="image types__image types__image-6"
-											width="810"
-											height="518"
-											alt="Изображение категории"
-										/>
-									</div>
-								</div>
-								<div class="swiper-slide types__slide">
-									<div class="types__column">
-										<p class="types__paragraph">
-											Категория «BE» - автомобили категории «В», сцепленные с прицепом,
-											разрешенная максимальная масса которого превышает 750 килограммов и
-											превышает массу автомобиля без нагрузки; автомобили категории «В»,
-											сцепленные с прицепом, разрешенная максимальная масса которого превышает 750
-											килограммов, при условии, что общая разрешенная максимальная масса такого
-											состава транспортных средств превышает 3500 килограммов
-										</p>
-										<div class="types__billing">
-											<h4 class="title types__period">3 месяца</h4>
-											<h3 class="title types__price">40 000 руб.</h3>
-										</div>
-										<a
-											href="#"
-											class="btn-reset btn btn-primary btn-primary-shadowless types__button"
-										>
-											записаться
-											<img
-												src="./img/right-yellow-arrow.svg"
-												class="image btn-primary__arrow"
-												width="9"
-												height="14"
-												alt="Стрелка вправо"
-											/>
-										</a>
-									</div>
-									<div class="types__container-image">
-										<img
-											src="./img/types-image-7.webp"
-											class="image types__image types__image-7"
-											width="810"
-											height="518"
-											alt="Изображение категории"
-										/>
-									</div>
-								</div>
-								<div class="swiper-slide types__slide">
-									<div class="types__column">
-										<p class="types__paragraph">
-											Категория «BE» - автомобили категории «В», сцепленные с прицепом,
-											разрешенная максимальная масса которого превышает 750 килограммов и
-											превышает массу автомобиля без нагрузки; автомобили категории «В»,
-											сцепленные с прицепом, разрешенная максимальная масса которого превышает 750
-											килограммов, при условии, что общая разрешенная максимальная масса такого
-											состава транспортных средств превышает 3500 килограммов
-										</p>
-										<div class="types__billing">
-											<h4 class="title types__period">3 месяца</h4>
-											<h3 class="title types__price">40 000 руб.</h3>
-										</div>
-										<a
-											href="#"
-											class="btn-reset btn btn-primary btn-primary-shadowless types__button"
-										>
-											записаться
-											<img
-												src="./img/right-yellow-arrow.svg"
-												class="image btn-primary__arrow"
-												width="9"
-												height="14"
-												alt="Стрелка вправо"
-											/>
-										</a>
-									</div>
-									<div class="types__container-image">
-										<img
-											src="./img/types-image-8.webp"
-											class="image types__image types__image-8"
-											width="810"
-											height="518"
-											alt="Изображение категории"
-										/>
-									</div>
-								</div>
-								<div class="swiper-slide types__slide">
-									<div class="types__column">
-										<p class="types__paragraph">
-											Категория «BE» - автомобили категории «В», сцепленные с прицепом,
-											разрешенная максимальная масса которого превышает 750 килограммов и
-											превышает массу автомобиля без нагрузки; автомобили категории «В»,
-											сцепленные с прицепом, разрешенная максимальная масса которого превышает 750
-											килограммов, при условии, что общая разрешенная максимальная масса такого
-											состава транспортных средств превышает 3500 килограммов
-										</p>
-										<div class="types__billing">
-											<h4 class="title types__period">3 месяца</h4>
-											<h3 class="title types__price">40 000 руб.</h3>
-										</div>
-										<a
-											href="#"
-											class="btn-reset btn btn-primary btn-primary-shadowless types__button"
-										>
-											записаться
-											<img
-												src="./img/right-yellow-arrow.svg"
-												class="image btn-primary__arrow"
-												width="9"
-												height="14"
-												alt="Стрелка вправо"
-											/>
-										</a>
-									</div>
-									<div class="types__container-image">
-										<img
-											src="./img/types-image-9.webp"
-											class="image types__image types__image-9"
-											width="810"
-											height="518"
-											alt="Изображение категории"
-										/>
-									</div>
-								</div>
-								<div class="swiper-slide types__slide">
-									<div class="types__column">
-										<p class="types__paragraph">
-											Категория «BE» - автомобили категории «В», сцепленные с прицепом,
-											разрешенная максимальная масса которого превышает 750 килограммов и
-											превышает массу автомобиля без нагрузки; автомобили категории «В»,
-											сцепленные с прицепом, разрешенная максимальная масса которого превышает 750
-											килограммов, при условии, что общая разрешенная максимальная масса такого
-											состава транспортных средств превышает 3500 килограммов
-										</p>
-										<div class="types__billing">
-											<h4 class="title types__period">3 месяца</h4>
-											<h3 class="title types__price">40 000 руб.</h3>
-										</div>
-										<a
-											href="#"
-											class="btn-reset btn btn-primary btn-primary-shadowless types__button"
-										>
-											записаться
-											<img
-												src="./img/right-yellow-arrow.svg"
-												class="image btn-primary__arrow"
-												width="9"
-												height="14"
-												alt="Стрелка вправо"
-											/>
-										</a>
-									</div>
-									<div class="types__column-last">
-										<h3 class="title types__title-slide">АI, AII, B, C, D Гостехнадзор</h3>
-										<div class="types__container-image">
-											<img
-												src="./img/types-image-10.webp"
-												class="image types__image types__image-10"
-												width="810"
-												height="518"
-												alt="Изображение категории"
-											/>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="types__container-pagination">
-								<h4 class="title types__title-pagination">Категории</h4>
-								<div class="types__pagination"></div>
 							</div>
 						</div>
 					</div>
-				</section>
-				<section class="why">
-					<div class="container why__container">
-						<h2 class="title why__title">ПОЧЕМУ ИМЕННО <span class="why__title-yellow">ДОСААФ</span></h2>
-						<ul class="list-reset why__list">
-							<li class="why__item">
-								<img
-									src="./img/why-image-1.webp"
-									class="image why__image why__image-1"
-									width="252"
-									height="156"
-									alt="Дорожные конусы"
-								/>
-								<h4 class="title why__subtitle">Самый большой</h4>
-								<p class="why__paragraph">профессиональный автодром Коломны</p>
-							</li>
-							<li class="why__item">
-								<img
-									src="./img/why-image-2.webp"
-									class="image why__image why__image-2"
-									width="224"
-									height="225"
-									alt="Дорожные конусы"
-								/>
-								<h4 class="title why__subtitle">Оборудованный</h4>
-								<p class="why__paragraph">учебный класс</p>
-							</li>
-							<li class="why__item">
-								<img
-									src="./img/why-image-3.webp"
-									class="image why__image why__image-3"
-									width="210"
-									height="210"
-									alt="Дорожные конусы"
-								/>
-								<h4 class="title why__subtitle">Предложим условия</h4>
-								<p class="why__paragraph">лучше чем в любой из&nbsp;автошкол Коломны</p>
-							</li>
-						</ul>
+				</div>
+				<a href="#" class="btn-reset btn btn-primary hero__button-hidden">
+					подробнее
+					<img
+						src="./img/right-yellow-arrow.svg"
+						class="image btn-primary__arrow"
+						width="9"
+						height="14"
+						alt="Стрелка вправо"
+					/>
+				</a>
+			</div>
+			<div class="swiper-slide hero__slide" style="background-image: url(./img/hero-slide-1-bg.webp)">
+				<div class="container hero__container">
+					<div class="hero__body">
+						<div class="hero__container-shadow">
+							<div class="hero__container-content">
+								<div class="hero__content">
+									<h1>Открыт набор на&nbsp;обучение</h1>
+									<p>
+										Водитель внедорожных мототранспортных средств категории «А1» (квадроцикл,
+										снегоход) - 13 000 руб
+									</p>
+									<p>
+										Водитель внедорожных автотранспортных средств категории «А2» (багги, вездеходы
+										"Трэкол", "Узола", "Ухтыш") - 15 000 руб
+									</p>
+									<a href="#" class="btn-reset btn btn-primary hero__button">
+										подробнее
+										<img
+											src="./img/right-yellow-arrow.svg"
+											class="image btn-primary__arrow"
+											width="9"
+											height="14"
+											alt="Стрелка вправо"
+										/>
+									</a>
+								</div>
+							</div>
+						</div>
 					</div>
-				</section>
+				</div>
+				<a href="#" class="btn-reset btn btn-primary hero__button-hidden">
+					подробнее
+					<img
+						src="./img/right-yellow-arrow.svg"
+						class="image btn-primary__arrow"
+						width="9"
+						height="14"
+						alt="Стрелка вправо"
+					/>
+				</a>
+			</div>
+			<div class="swiper-slide hero__slide" style="background-image: url(./img/hero-slide-2-bg.webp)">
+				<div class="container hero__container">
+					<div class="hero__body">
+						<div class="hero__container-shadow">
+							<div class="hero__container-content">
+								<div class="hero__content">
+									<h1>Скидка 2000 руб. на&nbsp;категорию «В»</h1>
+									<p>
+										Членам профсоюзной организации работников ОАО "Челябинский Металлургический
+										Комбинат" (ЧМК) при предъявлении справки о принадлежности работника к
+										профсоюзному комитету ЧМК
+									</p>
+									<a href="#" class="btn-reset btn btn-primary hero__button">
+										подробнее
+										<img
+											src="./img/right-yellow-arrow.svg"
+											class="image btn-primary__arrow"
+											width="9"
+											height="14"
+											alt="Стрелка вправо"
+										/>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<a href="#" class="btn-reset btn btn-primary hero__button-hidden">
+					подробнее
+					<img
+						src="./img/right-yellow-arrow.svg"
+						class="image btn-primary__arrow"
+						width="9"
+						height="14"
+						alt="Стрелка вправо"
+					/>
+				</a>
+			</div>
+			<div class="swiper-slide hero__slide" style="background-image: url(./img/hero-slide-2-bg.webp)">
+				<div class="container hero__container">
+					<div class="hero__body">
+						<div class="hero__container-shadow">
+							<div class="hero__container-content">
+								<div class="hero__content">
+									<h1>Скидка 2000 руб. на&nbsp;категорию «В»</h1>
+									<p>
+										Членам профсоюзной организации работников ОАО "Челябинский Металлургический
+										Комбинат" (ЧМК) при предъявлении справки о принадлежности работника к
+										профсоюзному комитету ЧМК
+									</p>
+									<a href="#" class="btn-reset btn btn-primary hero__button">
+										подробнее
+										<img
+											src="./img/right-yellow-arrow.svg"
+											class="image btn-primary__arrow"
+											width="9"
+											height="14"
+											alt="Стрелка вправо"
+										/>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<a href="#" class="btn-reset btn btn-primary hero__button-hidden">
+					подробнее
+					<img
+						src="./img/right-yellow-arrow.svg"
+						class="image btn-primary__arrow"
+						width="9"
+						height="14"
+						alt="Стрелка вправо"
+					/>
+				</a>
+			</div>
+		</div>
+		<div class="hero__button-control hero__button-control-next">
+			<svg class="hero__arrow">
+				<use xlink:href="./img/sprite.svg#right-arrow"></use>
+			</svg>
+		</div>
+		<div class="swiper-pagination hero__pagination"></div>
+	</div>
+</section>
+ <section class="types">
+	<div class="container types__container">
+		<h2 class="title types__title">Обучение водителей <span class="types__title-grey">Категории</span></h2>
+		<div class="swiper types__slider">
+			<div class="swiper-wrapper types__wrapper">
+				<div class="swiper-slide types__slide">
+					<div class="types__column">
+						<p class="types__paragraph">
+							Категория «BE» - автомобили категории «В», сцепленные с прицепом, разрешенная максимальная
+							масса которого превышает 750 килограммов и превышает массу автомобиля без нагрузки;
+							автомобили категории «В», сцепленные с прицепом, разрешенная максимальная масса которого
+							превышает 750 килограммов, при условии, что общая разрешенная максимальная масса такого
+							состава транспортных средств превышает 3500 килограммов
+						</p>
+						<div class="types__billing">
+							<h4 class="title types__period">3 месяца</h4>
+							<h3 class="title types__price">40 000 руб.</h3>
+						</div>
+						<a href="#" class="btn-reset btn btn-primary btn-primary-shadowless types__button">
+							записаться
+							<img
+								src="./img/right-yellow-arrow.svg"
+								class="image btn-primary__arrow"
+								width="9"
+								height="14"
+								alt="Стрелка вправо"
+							/>
+						</a>
+					</div>
+					<div class="types__container-image">
+						<img
+							src="./img/types-image-1.webp"
+							class="image types__image types__image-1"
+							width="810"
+							height="518"
+							alt="Изображение категории"
+						/>
+					</div>
+				</div>
+				<div class="swiper-slide types__slide">
+					<div class="types__column">
+						<p class="types__paragraph">
+							Категория «BE» - автомобили категории «В», сцепленные с прицепом, разрешенная максимальная
+							масса которого превышает 750 килограммов и превышает массу автомобиля без нагрузки;
+							автомобили категории «В», сцепленные с прицепом, разрешенная максимальная масса которого
+							превышает 750 килограммов, при условии, что общая разрешенная максимальная масса такого
+							состава транспортных средств превышает 3500 килограммов
+						</p>
+						<div class="types__billing">
+							<h4 class="title types__period">3 месяца</h4>
+							<h3 class="title types__price">40 000 руб.</h3>
+						</div>
+						<a href="#" class="btn-reset btn btn-primary btn-primary-shadowless types__button">
+							записаться
+							<img
+								src="./img/right-yellow-arrow.svg"
+								class="image btn-primary__arrow"
+								width="9"
+								height="14"
+								alt="Стрелка вправо"
+							/>
+						</a>
+					</div>
+					<div class="types__container-image">
+						<img
+							src="./img/types-image-2.webp"
+							class="image types__image types__image-2"
+							width="810"
+							height="518"
+							alt="Изображение категории"
+						/>
+					</div>
+				</div>
+				<div class="swiper-slide types__slide">
+					<div class="types__column">
+						<p class="types__paragraph">
+							Категория «BE» - автомобили категории «В», сцепленные с прицепом, разрешенная максимальная
+							масса которого превышает 750 килограммов и превышает массу автомобиля без нагрузки;
+							автомобили категории «В», сцепленные с прицепом, разрешенная максимальная масса которого
+							превышает 750 килограммов, при условии, что общая разрешенная максимальная масса такого
+							состава транспортных средств превышает 3500 килограммов
+						</p>
+						<div class="types__billing">
+							<h4 class="title types__period">3 месяца</h4>
+							<h3 class="title types__price">40 000 руб.</h3>
+						</div>
+						<a href="#" class="btn-reset btn btn-primary btn-primary-shadowless types__button">
+							записаться
+							<img
+								src="./img/right-yellow-arrow.svg"
+								class="image btn-primary__arrow"
+								width="9"
+								height="14"
+								alt="Стрелка вправо"
+							/>
+						</a>
+					</div>
+					<div class="types__container-image">
+						<img
+							src="./img/types-image-3.webp"
+							class="image types__image types__image-3"
+							width="810"
+							height="518"
+							alt="Изображение категории"
+						/>
+					</div>
+				</div>
+				<div class="swiper-slide types__slide">
+					<div class="types__column">
+						<p class="types__paragraph">
+							Категория «BE» - автомобили категории «В», сцепленные с прицепом, разрешенная максимальная
+							масса которого превышает 750 килограммов и превышает массу автомобиля без нагрузки;
+							автомобили категории «В», сцепленные с прицепом, разрешенная максимальная масса которого
+							превышает 750 килограммов, при условии, что общая разрешенная максимальная масса такого
+							состава транспортных средств превышает 3500 килограммов
+						</p>
+						<div class="types__billing">
+							<h4 class="title types__period">3 месяца</h4>
+							<h3 class="title types__price">40 000 руб.</h3>
+						</div>
+						<a href="#" class="btn-reset btn btn-primary btn-primary-shadowless types__button">
+							записаться
+							<img
+								src="./img/right-yellow-arrow.svg"
+								class="image btn-primary__arrow"
+								width="9"
+								height="14"
+								alt="Стрелка вправо"
+							/>
+						</a>
+					</div>
+					<div class="types__container-image">
+						<img
+							src="./img/types-image-4.webp"
+							class="image types__image types__image-4"
+							width="810"
+							height="518"
+							alt="Изображение категории"
+						/>
+					</div>
+				</div>
+				<div class="swiper-slide types__slide">
+					<div class="types__column">
+						<p class="types__paragraph">
+							Категория «BE» - автомобили категории «В», сцепленные с прицепом, разрешенная максимальная
+							масса которого превышает 750 килограммов и превышает массу автомобиля без нагрузки;
+							автомобили категории «В», сцепленные с прицепом, разрешенная максимальная масса которого
+							превышает 750 килограммов, при условии, что общая разрешенная максимальная масса такого
+							состава транспортных средств превышает 3500 килограммов
+						</p>
+						<div class="types__billing">
+							<h4 class="title types__period">3 месяца</h4>
+							<h3 class="title types__price">40 000 руб.</h3>
+						</div>
+						<a href="#" class="btn-reset btn btn-primary btn-primary-shadowless types__button">
+							записаться
+							<img
+								src="./img/right-yellow-arrow.svg"
+								class="image btn-primary__arrow"
+								width="9"
+								height="14"
+								alt="Стрелка вправо"
+							/>
+						</a>
+					</div>
+					<div class="types__container-image">
+						<img
+							src="./img/types-image-5.webp"
+							class="image types__image types__image-5"
+							width="810"
+							height="518"
+							alt="Изображение категории"
+						/>
+					</div>
+				</div>
+				<div class="swiper-slide types__slide">
+					<div class="types__column">
+						<p class="types__paragraph">
+							Категория «BE» - автомобили категории «В», сцепленные с прицепом, разрешенная максимальная
+							масса которого превышает 750 килограммов и превышает массу автомобиля без нагрузки;
+							автомобили категории «В», сцепленные с прицепом, разрешенная максимальная масса которого
+							превышает 750 килограммов, при условии, что общая разрешенная максимальная масса такого
+							состава транспортных средств превышает 3500 килограммов
+						</p>
+						<div class="types__billing">
+							<h4 class="title types__period">3 месяца</h4>
+							<h3 class="title types__price">40 000 руб.</h3>
+						</div>
+						<a href="#" class="btn-reset btn btn-primary btn-primary-shadowless types__button">
+							записаться
+							<img
+								src="./img/right-yellow-arrow.svg"
+								class="image btn-primary__arrow"
+								width="9"
+								height="14"
+								alt="Стрелка вправо"
+							/>
+						</a>
+					</div>
+					<div class="types__container-image">
+						<img
+							src="./img/types-image-6.webp"
+							class="image types__image types__image-6"
+							width="810"
+							height="518"
+							alt="Изображение категории"
+						/>
+					</div>
+				</div>
+				<div class="swiper-slide types__slide">
+					<div class="types__column">
+						<p class="types__paragraph">
+							Категория «BE» - автомобили категории «В», сцепленные с прицепом, разрешенная максимальная
+							масса которого превышает 750 килограммов и превышает массу автомобиля без нагрузки;
+							автомобили категории «В», сцепленные с прицепом, разрешенная максимальная масса которого
+							превышает 750 килограммов, при условии, что общая разрешенная максимальная масса такого
+							состава транспортных средств превышает 3500 килограммов
+						</p>
+						<div class="types__billing">
+							<h4 class="title types__period">3 месяца</h4>
+							<h3 class="title types__price">40 000 руб.</h3>
+						</div>
+						<a href="#" class="btn-reset btn btn-primary btn-primary-shadowless types__button">
+							записаться
+							<img
+								src="./img/right-yellow-arrow.svg"
+								class="image btn-primary__arrow"
+								width="9"
+								height="14"
+								alt="Стрелка вправо"
+							/>
+						</a>
+					</div>
+					<div class="types__container-image">
+						<img
+							src="./img/types-image-7.webp"
+							class="image types__image types__image-7"
+							width="810"
+							height="518"
+							alt="Изображение категории"
+						/>
+					</div>
+				</div>
+				<div class="swiper-slide types__slide">
+					<div class="types__column">
+						<p class="types__paragraph">
+							Категория «BE» - автомобили категории «В», сцепленные с прицепом, разрешенная максимальная
+							масса которого превышает 750 килограммов и превышает массу автомобиля без нагрузки;
+							автомобили категории «В», сцепленные с прицепом, разрешенная максимальная масса которого
+							превышает 750 килограммов, при условии, что общая разрешенная максимальная масса такого
+							состава транспортных средств превышает 3500 килограммов
+						</p>
+						<div class="types__billing">
+							<h4 class="title types__period">3 месяца</h4>
+							<h3 class="title types__price">40 000 руб.</h3>
+						</div>
+						<a href="#" class="btn-reset btn btn-primary btn-primary-shadowless types__button">
+							записаться
+							<img
+								src="./img/right-yellow-arrow.svg"
+								class="image btn-primary__arrow"
+								width="9"
+								height="14"
+								alt="Стрелка вправо"
+							/>
+						</a>
+					</div>
+					<div class="types__container-image">
+						<img
+							src="./img/types-image-8.webp"
+							class="image types__image types__image-8"
+							width="810"
+							height="518"
+							alt="Изображение категории"
+						/>
+					</div>
+				</div>
+				<div class="swiper-slide types__slide">
+					<div class="types__column">
+						<p class="types__paragraph">
+							Категория «BE» - автомобили категории «В», сцепленные с прицепом, разрешенная максимальная
+							масса которого превышает 750 килограммов и превышает массу автомобиля без нагрузки;
+							автомобили категории «В», сцепленные с прицепом, разрешенная максимальная масса которого
+							превышает 750 килограммов, при условии, что общая разрешенная максимальная масса такого
+							состава транспортных средств превышает 3500 килограммов
+						</p>
+						<div class="types__billing">
+							<h4 class="title types__period">3 месяца</h4>
+							<h3 class="title types__price">40 000 руб.</h3>
+						</div>
+						<a href="#" class="btn-reset btn btn-primary btn-primary-shadowless types__button">
+							записаться
+							<img
+								src="./img/right-yellow-arrow.svg"
+								class="image btn-primary__arrow"
+								width="9"
+								height="14"
+								alt="Стрелка вправо"
+							/>
+						</a>
+					</div>
+					<div class="types__container-image">
+						<img
+							src="./img/types-image-9.webp"
+							class="image types__image types__image-9"
+							width="810"
+							height="518"
+							alt="Изображение категории"
+						/>
+					</div>
+				</div>
+				<div class="swiper-slide types__slide">
+					<div class="types__column">
+						<p class="types__paragraph">
+							Категория «BE» - автомобили категории «В», сцепленные с прицепом, разрешенная максимальная
+							масса которого превышает 750 килограммов и превышает массу автомобиля без нагрузки;
+							автомобили категории «В», сцепленные с прицепом, разрешенная максимальная масса которого
+							превышает 750 килограммов, при условии, что общая разрешенная максимальная масса такого
+							состава транспортных средств превышает 3500 килограммов
+						</p>
+						<div class="types__billing">
+							<h4 class="title types__period">3 месяца</h4>
+							<h3 class="title types__price">40 000 руб.</h3>
+						</div>
+						<a href="#" class="btn-reset btn btn-primary btn-primary-shadowless types__button">
+							записаться
+							<img
+								src="./img/right-yellow-arrow.svg"
+								class="image btn-primary__arrow"
+								width="9"
+								height="14"
+								alt="Стрелка вправо"
+							/>
+						</a>
+					</div>
+					<div class="types__column-last">
+						<h3 class="title types__title-slide">АI, AII, B, C, D Гостехнадзор</h3>
+						<div class="types__container-image">
+							<img
+								src="./img/types-image-10.webp"
+								class="image types__image types__image-10"
+								width="810"
+								height="518"
+								alt="Изображение категории"
+							/>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="types__container-pagination">
+				<h4 class="title types__title-pagination">Категории</h4>
+				<div class="types__pagination"></div>
+			</div>
+		</div>
+	</div>
+</section>
+ <section class="why">
+	<div class="container why__container">
+		<h2 class="title why__title">ПОЧЕМУ ИМЕННО <span class="why__title-yellow">ДОСААФ</span></h2>
+		<ul class="list-reset why__list">
+			<li class="why__item">
+				<img
+					src="./img/why-image-1.webp"
+					class="image why__image why__image-1"
+					width="252"
+					height="156"
+					alt="Дорожные конусы"
+				/>
+				<h4 class="title why__subtitle">Самый большой</h4>
+				<p class="why__paragraph">профессиональный автодром Коломны</p>
+			</li>
+			<li class="why__item">
+				<img
+					src="./img/why-image-2.webp"
+					class="image why__image why__image-2"
+					width="224"
+					height="225"
+					alt="Дорожные конусы"
+				/>
+				<h4 class="title why__subtitle">Оборудованный</h4>
+				<p class="why__paragraph">учебный класс</p>
+			</li>
+			<li class="why__item">
+				<img
+					src="./img/why-image-3.webp"
+					class="image why__image why__image-3"
+					width="210"
+					height="210"
+					alt="Дорожные конусы"
+				/>
+				<h4 class="title why__subtitle">Предложим условия</h4>
+				<p class="why__paragraph">лучше чем в любой из&nbsp;автошкол Коломны</p>
+			</li>
+		</ul>
+	</div>
+</section>
 
 				<section class="stats">
-					<div class="stats__fade"></div>
-					<div class="container stats__container">
-						<div class="stats__body">
-							<picture class="stats__picture stats__picture-1">
-								<source srcset="./img/stats-image-1-480.webp" media="(max-width: 480px)" />
-								<img
-									src="./img/stats-image-1.webp"
-									class="image stats__image stats__image-1"
-									width="461"
-									height="310"
-									alt="Год старта работ"
-								/>
-							</picture>
-							<picture class="stats__picture stats__picture-2">
-								<source srcset="./img/stats-image-2-480.webp" media="(max-width: 480px)" />
-								<img
-									src="./img/stats-image-2.webp"
-									class="image stats__image stats__image-2"
-									width="647"
-									height="380"
-									alt="Количество клиентов"
-								/>
-							</picture>
-							<picture class="stats__picture stats__picture-3">
-								<source srcset="./img/stats-image-3-480.webp" media="(max-width: 480px)" />
-								<img
-									src="./img/stats-image-3.webp"
-									class="image stats__image stats__image-3"
-									width="461"
-									height="316"
-									alt="Процент сдачи экзаменов"
-								/>
-							</picture>
-						</div>
-					</div>
-				</section>
+	<div class="stats__fade"></div>
+	<div class="container stats__container">
+		<div class="stats__body">
+			<picture class="stats__picture stats__picture-1">
+				<source srcset="./img/stats-image-1-480.webp" media="(max-width: 480px)" />
+				<img
+					src="./img/stats-image-1.webp"
+					class="image stats__image stats__image-1"
+					width="461"
+					height="310"
+					alt="Год старта работ"
+				/>
+			</picture>
+			<picture class="stats__picture stats__picture-2">
+				<source srcset="./img/stats-image-2-480.webp" media="(max-width: 480px)" />
+				<img
+					src="./img/stats-image-2.webp"
+					class="image stats__image stats__image-2"
+					width="647"
+					height="380"
+					alt="Количество клиентов"
+				/>
+			</picture>
+			<picture class="stats__picture stats__picture-3">
+				<source srcset="./img/stats-image-3-480.webp" media="(max-width: 480px)" />
+				<img
+					src="./img/stats-image-3.webp"
+					class="image stats__image stats__image-3"
+					width="461"
+					height="316"
+					alt="Процент сдачи экзаменов"
+				/>
+			</picture>
+		</div>
+	</div>
+</section>
+
 			</main>
 		</div>
 	</body>
