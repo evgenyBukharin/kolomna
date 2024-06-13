@@ -10671,9 +10671,9 @@ if (sliderEl) {
       clickable: true
     },
     on: {
-      afterInit: function () {
-        setSlidesHeight(this.slides);
-      }
+      // afterInit: function () {
+      // 	setSlidesHeight(this.slides);
+      // },
     },
     effect: "fade",
     fadeEffect: {
