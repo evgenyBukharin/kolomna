@@ -10685,6 +10685,7 @@ function setSlidesHeight(slides) {
   let maxSlideHeight = 0;
   slides.forEach(slide => {
     let slideHeight = slide.scrollHeight;
+    console.log(slideHeight);
     if (slideHeight > maxSlideHeight) {
       maxSlideHeight = slideHeight;
     }
