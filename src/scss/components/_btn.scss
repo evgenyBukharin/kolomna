@@ -74,3 +74,13 @@
 		}
 	}
 }
+
+@media (max-width: 768px) {
+	.btn {
+		&-control {
+			&__arrow {
+				fill: var(--white-color) !important;
+			}
+		}
+	}
+}
