@@ -37,8 +37,6 @@
 		position: relative;
 		padding: 0 88px;
 	}
-	&__slider {
-	}
 	&__slide {
 		height: auto;
 		background-repeat: no-repeat;
@@ -83,49 +81,9 @@
 	}
 	&__button {
 		margin-top: 30px;
-		&-control {
-			width: 57px;
-			height: 57px;
-			border-radius: 20px;
-			backdrop-filter: blur(10px);
-			box-shadow: 0 4px 60px 0 rgba(0, 0, 0, 0.6);
-			position: absolute;
-			top: 50%;
-			translate: 0 -50%;
-			rotate: 45deg;
-			display: flex;
-			justify-content: center;
-			align-items: center;
-			cursor: pointer;
-			z-index: 10;
-			&:hover {
-				& .hero__arrow {
-					fill: var(--yellow-color);
-				}
-			}
-			&-prev {
-				left: 32px;
-				background: rgba(0, 0, 0, 0.5);
-			}
-			&-next {
-				right: 32px;
-				background: rgba(0, 0, 0, 0.3);
-				& .hero__arrow {
-					rotate: -45deg;
-					translate: 2px -2px;
-				}
-			}
-		}
 		&-hidden {
 			display: none;
 		}
-	}
-	&__arrow {
-		width: 13px;
-		height: 22px;
-		fill: var(--white-color);
-		rotate: 135deg;
-		transition: fill 0.2s ease;
 	}
 	&__pagination {
 		display: flex;

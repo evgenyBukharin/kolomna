@@ -10,23 +10,7 @@
 		padding: 16px 31px;
 		border-radius: 25px;
 		display: flex;
-		align-items: center;
 
-		// рисуем границы + фон кнопки сами, но часть градиаента границ выходит за бордер радиус
-		// border: 2px solid transparent;
-		// border-right: 0;
-		// border-left: 0;
-		// border-image: linear-gradient(
-		// 	90deg,
-		// 	transparent 0%,
-		// 	var(--red-color) 50%,
-		// 	transparent 100%
-		// );
-		// background: linear-gradient(124deg, var(--light-red-color), var(--dark-red-color));
-		// box-shadow: 0 4px 20px 0 rgba(156, 23, 23, 0.2);
-		// border-image-slice: 1;
-
-		// риусем фон целым бэкграундом из фигмы
 		background-image: url(../img/btn-bg.svg);
 		background-repeat: no-repeat;
 		background-position: center;
@@ -44,6 +28,49 @@
 			& .btn-primary__arrow {
 				transform: translateX(2px);
 			}
+		}
+	}
+	&-control {
+		width: 57px;
+		height: 57px;
+		border-radius: 20px;
+		backdrop-filter: blur(10px);
+		box-shadow: 0 4px 60px 0 rgba(0, 0, 0, 0.6);
+		position: absolute;
+		top: 50%;
+		translate: 0 -50%;
+		rotate: 45deg;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		cursor: pointer;
+		z-index: 10;
+		&:hover {
+			& .btn-control__arrow {
+				fill: var(--yellow-color);
+			}
+		}
+		&-prev {
+			left: 32px;
+			background: rgba(0, 0, 0, 0.5);
+		}
+		&-next {
+			right: 32px;
+			background: rgba(0, 0, 0, 0.3);
+			& .btn-control__arrow {
+				rotate: -45deg;
+				translate: 2px -2px;
+			}
+		}
+		&-shadowless {
+			box-shadow: none;
+		}
+		&__arrow {
+			width: 13px;
+			height: 22px;
+			fill: var(--white-color);
+			rotate: 135deg;
+			transition: fill 0.2s ease;
 		}
 	}
 }
