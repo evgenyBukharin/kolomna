@@ -13,7 +13,6 @@ if (sliderEl) {
 			crossFade: true,
 		},
 		allowTouchMove: false,
-		autoHeight: true,
 		pagination: {
 			el: ".types__pagination",
 			type: "bullets",
@@ -22,6 +21,14 @@ if (sliderEl) {
 			bulletActiveClass: "types__bullet-active",
 			renderBullet: function (idx, className) {
 				return `<span class="${className}">${types[idx]}</span>`;
+			},
+		},
+		breakpoints: {
+			0: {
+				autoHeight: true,
+			},
+			1221: {
+				autoHeight: false,
 			},
 		},
 	});

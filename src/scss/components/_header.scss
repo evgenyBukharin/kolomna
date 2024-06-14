@@ -1,12 +1,16 @@
 .header {
-	position: absolute;
-	inset: 0 0 unset 0;
+	position: fixed;
 	width: 100%;
+	z-index: 100;
 	&__container {
 		&-call {
 			display: flex;
 			justify-content: flex-end;
 			flex-direction: column;
+		}
+		&-right {
+			display: flex;
+			gap: 20px 40px;
 		}
 	}
 	&__body {
@@ -76,6 +80,9 @@
 			);
 			border-image-slice: 1;
 		}
+		&-online {
+			color: var(--blue-color) !important;
+		}
 		&:hover {
 			color: var(--blue-color);
 		}
@@ -90,7 +97,7 @@
 		transition: fill 0.3s ease, stroke 0.3s ease;
 		cursor: pointer;
 		&-vk {
-			fill: rgba(255, 255, 255, 0.5);
+			fill: var(--white-color);
 			width: 19px;
 			height: 11px;
 			&:hover {
@@ -98,7 +105,7 @@
 			}
 		}
 		&-tg {
-			stroke: #96999f;
+			stroke: var(--white-color);
 			fill: transparent;
 			width: 17px;
 			height: 15px;
@@ -107,7 +114,7 @@
 			}
 		}
 		&-whatsapp {
-			fill: rgba(255, 255, 255, 0.5);
+			fill: var(--white-color);
 			width: 17px;
 			height: 17px;
 			&:hover {
@@ -179,6 +186,7 @@
 	.header {
 		background: rgba(0, 0, 0, 0.5);
 		box-shadow: 0 4px 60px 0 rgba(14, 39, 51, 0.3);
+		backdrop-filter: blur(5px);
 		padding: 7px 0;
 		&__container {
 			max-width: 808px;

@@ -1,13 +1,14 @@
-import Swiper, { Navigation, Pagination } from "swiper";
-Swiper.use([Navigation, Pagination]);
+import Swiper, { Navigation, Pagination, EffectFade } from "swiper";
+Swiper.use([Navigation, Pagination, EffectFade]);
+
+const mobileMediaQuery = window.matchMedia("(max-width: 480px)");
 
 const sliderEl = document.querySelector(".hero__slider");
 if (sliderEl) {
 	let heroSlider = new Swiper(sliderEl, {
-		spaceBetween: 30,
 		slidesPerView: 1,
-		speed: 600,
-		loop: true,
+		speed: 1000,
+		// loop: true,
 		navigation: {
 			nextEl: ".hero__button-control-next",
 			prevEl: ".hero__button-control-prev",
@@ -16,6 +17,11 @@ if (sliderEl) {
 			el: ".hero__pagination",
 			type: "bullets",
 			bulletClass: "swiper-pagination-bullet hero__bullet",
+			clickable: true,
+		},
+		effect: "fade",
+		fadeEffect: {
+			crossFade: true,
 		},
 	});
 }
