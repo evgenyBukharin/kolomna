@@ -7,7 +7,7 @@
 		font-size: 18px;
 		line-height: 100%;
 		color: var(--white-color);
-		padding: 16px 31px;
+		padding: 16px 46px 16px 34px;
 		border-radius: 25px;
 		display: flex;
 
@@ -16,17 +16,30 @@
 		background-position: center;
 		background-size: cover;
 
-		&__arrow {
-			margin-left: 14px;
-			transition: transform 0.1s ease;
-			margin-bottom: -1px;
+		&::after,
+		&::before {
+			content: "";
+			width: 2px;
+			height: 8px;
+			background: var(--yellow-color);
+			border-radius: 1px;
+			position: absolute;
+			top: 43%;
+			right: 24px;
+			transform: translateY(-43%);
+			rotate: 225deg;
+			transition: translate 0.1s ease;
+		}
+		&::after {
+			rotate: -45deg;
 		}
 		&-shadowless {
 			box-shadow: none;
 		}
 		&:hover {
-			& .btn-primary__arrow {
-				transform: translateX(2px);
+			&::before,
+			&::after {
+				translate: 2px;
 			}
 		}
 	}

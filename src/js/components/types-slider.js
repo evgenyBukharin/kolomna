@@ -27,7 +27,7 @@ if (sliderEl) {
 			0: {
 				autoHeight: true,
 			},
-			1221: {
+			1441: {
 				autoHeight: false,
 			},
 		},
