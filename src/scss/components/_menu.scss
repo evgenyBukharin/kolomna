@@ -1,0 +1,46 @@
+.menu {
+	display: none;
+	position: fixed;
+	inset: 0;
+	background: #030303;
+	padding: 14px 18px 14px 32px;
+	z-index: 1000;
+	transform: translateX(-100%);
+	transition: transform 0.3s ease;
+	&-visible {
+		transform: translate(0);
+	}
+	&__close {
+		display: block;
+		margin-left: auto;
+		cursor: pointer;
+		margin-bottom: 8px;
+	}
+	&__list {
+		flex-direction: column;
+		gap: 28px;
+	}
+	&__link {
+		padding: 0;
+		&-discount {
+			gap: 14px;
+		}
+		&-capitalize {
+			text-transform: lowercase;
+			&::first-letter {
+				text-transform: uppercase;
+			}
+		}
+	}
+	&__phone {
+		margin-top: 50px;
+		flex-direction: row-reverse;
+		align-items: flex-start;
+	}
+}
+
+@media (max-width: 1024px) {
+	.menu {
+		display: unset;
+	}
+}
