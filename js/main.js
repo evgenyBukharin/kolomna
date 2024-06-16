@@ -1,6 +1,31 @@
 /******/ (() => {
 	// webpackBootstrap
 	/******/ var __webpack_modules__ = {
+		/***/ 604: /***/ () => {
+			const openMenuBtn = document.querySelector(".burger");
+			const closeMenuBtn = document.querySelector(".menu__close");
+			const menu = document.querySelector(".menu");
+			const body = document.querySelector("body");
+			if (openMenuBtn && closeMenuBtn) {
+				openMenuBtn.addEventListener("click", () => {
+					showMenu();
+					body.style.overflowY = "hidden";
+				});
+				closeMenuBtn.addEventListener("click", () => {
+					hideMenu();
+					body.style.overflowY = "visible";
+				});
+			}
+			function hideMenu() {
+				menu.classList.remove("menu-visible");
+			}
+			function showMenu() {
+				menu.classList.add("menu-visible");
+			}
+
+			/***/
+		},
+
 		/***/ 621: /***/ () => {
 			let markerCoords = [38.75541973287151, 55.069505614028074];
 			initMap();
@@ -83,7 +108,9 @@
 			documentEl: document,
 			htmlEl: document.documentElement,
 			bodyEl: document.body,
-		}; // CONCATENATED MODULE: ./node_modules/ssr-window/ssr-window.esm.js
+		};
+		// EXTERNAL MODULE: ./src/js/components/burger.js
+		var burger = __webpack_require__(604); // CONCATENATED MODULE: ./node_modules/ssr-window/ssr-window.esm.js
 		/**
 		 * SSR Window 4.0.2
 		 * Better handling for window object in SSR environment
