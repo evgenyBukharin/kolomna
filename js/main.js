@@ -26,6 +26,39 @@
 			/***/
 		},
 
+		/***/ 452: /***/ () => {
+			const header = document.querySelector(".header");
+			const menuMediaQuery = window.matchMedia("(max-width: 1024px)").matches;
+			if (header && !menuMediaQuery) {
+				let getScrollPosition = () => {
+					return (document.documentElement || document.body.parentNode || document.body).scrollTop;
+				};
+				const observer = new IntersectionObserver((entries) => {
+					// перебор записей
+					entries.forEach((entry) => {
+						// если элемент появился
+						if (entry.isIntersecting) {
+							// добавить ему CSS-класс
+							header.classList.remove("header-halfed");
+						} else {
+							header.classList.add("header-halfed");
+						}
+					});
+				});
+				// элемент за которым следить
+				observer.observe(document.querySelector(".hero"));
+				document.addEventListener("scroll", () => {
+					if (getScrollPosition() > 10) {
+						header.classList.add("header-halfed");
+					} else {
+						header.classList.remove("header-halfed");
+					}
+				});
+			}
+
+			/***/
+		},
+
 		/***/ 621: /***/ () => {
 			let markerCoords = [38.75541973287151, 55.069505614028074];
 			initMap();
@@ -10901,7 +10934,9 @@
 			});
 		}
 		// EXTERNAL MODULE: ./src/js/components/location-map.js
-		var location_map = __webpack_require__(621); // CONCATENATED MODULE: ./src/js/_components.js // CONCATENATED MODULE: ./src/js/main.js
+		var location_map = __webpack_require__(621);
+		// EXTERNAL MODULE: ./src/js/components/dynamic-header.js
+		var dynamic_header = __webpack_require__(452); // CONCATENATED MODULE: ./src/js/_components.js // CONCATENATED MODULE: ./src/js/main.js
 	})();
 
 	/******/
