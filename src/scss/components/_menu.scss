@@ -1,8 +1,9 @@
 .menu {
 	display: none;
 	position: fixed;
-	inset: 0;
-	background: #030303;
+	inset: 81px 0 0;
+	background: rgb(3, 3, 3, 0.98);
+	backdrop-filter: blur(5px);
 	padding: 14px 18px 14px 32px;
 	z-index: 1000;
 	transform: translateX(-100%);
@@ -14,7 +15,6 @@
 		display: block;
 		margin-left: auto;
 		cursor: pointer;
-		margin-bottom: 8px;
 	}
 	&__list {
 		flex-direction: column;
@@ -24,6 +24,7 @@
 		padding: 0;
 		&-discount {
 			gap: 14px;
+			text-transform: uppercase;
 		}
 		&-capitalize {
 			text-transform: lowercase;

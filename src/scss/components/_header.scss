@@ -2,6 +2,21 @@
 	position: fixed;
 	width: 100%;
 	z-index: 100;
+	&-halfed {
+		& .header {
+			&__top {
+				display: none;
+			}
+			&__bottom {
+				margin-top: 6px;
+			}
+			&__logo {
+				top: -8px;
+				width: 98px;
+				height: 98px;
+			}
+		}
+	}
 	&__container {
 		&-call {
 			display: flex;
@@ -166,6 +181,11 @@
 
 @media (max-width: 1440px) {
 	.header {
+		&__container {
+			&-right {
+				column-gap: 26px;
+			}
+		}
 		&__list {
 			gap: 25px;
 		}
@@ -193,6 +213,9 @@
 		padding: 7px 0;
 		&__container {
 			max-width: 808px;
+			&-right {
+				gap: 20px 48px;
+			}
 		}
 		&__body {
 			display: flex;
@@ -232,6 +255,14 @@
 	.header {
 		&__body {
 			gap: 20px;
+		}
+	}
+}
+
+@media (max-width: 350px) {
+	.header {
+		&__container-right {
+			gap: 20px 26px;
 		}
 	}
 }

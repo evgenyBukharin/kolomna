@@ -193,6 +193,9 @@
 }
 @media (max-width: 480px) {
 	.hero {
+		&__container {
+			padding: 0 14px;
+		}
 		&__slide {
 			min-height: 893px;
 			padding-bottom: 110px;
@@ -200,9 +203,13 @@
 			h2 {
 				font-size: 50px;
 				text-align: left;
+				line-height: 100%;
+				margin-bottom: 6px;
 			}
 			& p {
 				text-align: left;
+				font-size: 14px;
+				line-height: 100%;
 			}
 
 			&::after {

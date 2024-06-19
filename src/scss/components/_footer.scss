@@ -242,7 +242,7 @@
 			&-phone {
 				width: 100%;
 				flex-direction: row-reverse;
-				align-items: center;
+				align-items: flex-start;
 				justify-content: space-between;
 			}
 			&-logo {
@@ -260,6 +260,9 @@
 		}
 		&__link {
 			font-size: 14px;
+			&-discount {
+				flex-direction: row-reverse;
+			}
 		}
 		&__logo {
 			&-kolomna {

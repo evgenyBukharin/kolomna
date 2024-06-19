@@ -249,6 +249,30 @@
 	.types {
 		background-position: 80% 0%;
 		background-size: 300%;
+		&__title {
+			text-align: left;
+		}
+		&__paragraph {
+			text-align: left;
+			margin-bottom: 12px;
+		}
+		&__column {
+			align-items: flex-start;
+		}
+		&__billing {
+			display: flex;
+			align-items: flex-end;
+			gap: 8px;
+		}
+		&__period {
+			text-align: left;
+			line-height: 40px;
+		}
+		&__price {
+			text-align: left;
+			font-size: 40px;
+			line-height: 100%;
+		}
 	}
 }
 @media (max-width: 440px) {

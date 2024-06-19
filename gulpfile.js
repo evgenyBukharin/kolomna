@@ -254,23 +254,27 @@ const resources = () => {
 };
 
 const images = () => {
-	return src([`${paths.srcImgFolder}/**/**.{jpg,jpeg,png,svg}`])
-		.pipe(
-			gulpif(
-				isProd,
-				image([
-					image.mozjpeg({
-						quality: 80,
-						progressive: true,
-					}),
-					image.optipng({
-						optimizationLevel: 2,
-					}),
-				])
-			)
-		)
-		.pipe(dest(paths.buildImgFolder));
+	return src([`${paths.srcImgFolder}/**/**.{jpg,jpeg,png,svg}`]).pipe(dest(paths.buildImgFolder));
 };
+
+// const images = () => {
+// 	return src([`${paths.srcImgFolder}/**/**.{jpg,jpeg,png,svg}`])
+// 		.pipe(
+// 			gulpif(
+// 				isProd,
+// 				image([
+// 					image.mozjpeg({
+// 						quality: 100,
+// 						progressive: true,
+// 					}),
+// 					image.optipng({
+// 						optimizationLevel: 2,
+// 					}),
+// 				])
+// 			)
+// 		)
+// 		.pipe(dest(paths.buildImgFolder));
+// };
 
 const webpImages = () => {
 	return src([`${paths.srcImgFolder}/**/**.{jpg,jpeg,png}`])
